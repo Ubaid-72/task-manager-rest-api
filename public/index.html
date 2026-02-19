@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intern Project Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Intern Project Management System</h1>
+    <p>Task 5 – Cognifyz Internship</p>
+  </header>
+
+  <section class="form-section">
+    <h2>Add New Project</h2>
+
+    <input type="text" id="title" placeholder="Project Title">
+    <textarea id="description" placeholder="Project Description"></textarea>
+
+    <select id="priority">
+      <option value="">Select Priority</option>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <button onclick="addProject()">Add Project</button>
+  </section>
+
+  <section class="filter-section">
+    <h3>Filter by Status</h3>
+    <button onclick="filterProjects('All')">All</button>
+    <button onclick="filterProjects('Pending')">Pending</button>
+    <button onclick="filterProjects('Completed')">Completed</button>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div id="projectList"></div>
+  </section>
+
+  <footer>
+    <p>Developed by Ubaidulla</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
